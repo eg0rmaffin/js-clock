@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+}
+
+.intro {
+  height: 100vh;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(0, 255, 239, 1) 60%
+  );
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+
+.clock_base {
+  margin: 0 auto;
+  width: 30vh;
+  height: 30vh;
+  border: solid white 1vh;
+  padding: 10px 10px 10px 10px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.clock_hour {
+  position: absolute;
+  height: 0.5vh;
+  display: block;
+  background: black;
+  border-radius: 20%;
+  top: 50%;
+  transform-origin: 100%;
+  width: 46%;
+  transition: all 0.04s;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.clock_min {
+  position: absolute;
+  height: 0.5vh;
+  display: block;
+  background: black;
+  border-radius: 20%;
+  top: 50%;
+  transform-origin: 100%;
+  width: 46%;
+  transition: all 0.04s;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
+
+.clock_sec {
+  position: absolute;
+  height: 0.25vh;
+  display: block;
+  background: black;
+  border-radius: 20%;
+  top: 50%;
+  transform-origin: 100%;
+  width: 46%;
+  transition: all 0.04s;
+  transition-timing-function: cubic-bezier(1, 0, 0, 1);
+}
